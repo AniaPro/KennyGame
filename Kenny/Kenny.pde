@@ -51,10 +51,10 @@ void draw()
     textSize(30);
     fill(255,255,255);
     text("Wynik " + wynik, 30, 50); // wypisuje wynik
-    promien_pilki = (int) map(mouseX, 0, width, 20, 35); // promien pilki, na ktorej wyswietlany jest Kenny zwieksza sie wraz z wielkoscia X (od lewej do prawej)
+    promien_pilki = (int) map(mouseX, 0, width, 15, 30); // promien pilki, na ktorej wyswietlany jest Kenny zwieksza sie wraz z wielkoscia X (od lewej do prawej)
     fill(0);
     ellipse(mouseX, mouseY, promien_pilki, promien_pilki);
-    promien_wroga = (int) map(mouseX, 0, width, 40, 20); // promien wrogow zmniejsza sie wraz ze wzrostem X kulki pod Kennym
+    promien_wroga = (int) map(mouseX, 0, width, 40, 15); // promien wrogow zmniejsza sie wraz ze wzrostem X kulki pod Kennym
     
     fill(50, 150, 250); // rysuje i updateuje zielona kulke
     ellipse(zielona_kulka.x, zielona_kulka.y, promien_wroga, promien_wroga);
